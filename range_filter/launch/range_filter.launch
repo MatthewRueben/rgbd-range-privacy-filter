@@ -1,3 +1,9 @@
 <launch>
 
+	<!-- LAUNCH CAMERA DRIVER -->
+	<include file="$(find openni_launch)/launch/openni.launch" />
+
+	<!-- LAUNCH FILTER NODE -->
+	<node name="range_filter" type="range_filter.py" pkg="range_filter" output="screen" />
+
 </launch>
