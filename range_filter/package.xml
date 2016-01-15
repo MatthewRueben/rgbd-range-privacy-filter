@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>range_filter</name>
+  <version>0.0.0</version>
+  <description>The range-filter package</description>
+
+  <maintainer email="ruebenm@oregonstate.edu">Matthew Rueben</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+
+  <export>
+  </export>
+</package>
