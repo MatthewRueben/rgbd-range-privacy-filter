@@ -1,7 +1,9 @@
 <launch>
 
 	<!-- LAUNCH CAMERA DRIVER -->
-	<include file="$(find openni_launch)/launch/openni.launch" />
+	<include file="$(find openni_launch)/launch/openni.launch" >
+		 <arg name="depth_registration" value="true" />
+	</include>
 
 	<!-- LAUNCH FILTER NODE -->
 	<node name="range_filter" type="range_filter.py" pkg="range_filter" output="screen" />
